@@ -1,4 +1,3 @@
-
 import { InternalDefensesModule } from './internal-defenses/internal-defenses.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -10,14 +9,17 @@ import { LaserCannonComponent } from './internal-defenses/laser-cannon/laser-can
 import { TieFighterComponent } from './external-defenses/tie-fighter/tie-fighter.component';
 import {StarDestroyerComponent} from './external-defenses/star-destroyer/star-destroyer.component'
 import { ExternalDefensesModule } from './external-defenses/external-defenses.module';
-
+import { InfoWindowComponent } from './info-window/info-window.component';
+import { AppRoutingModule} from './app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
+    InfoWindowComponent,
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     InternalDefensesModule,
     ExternalDefensesModule
 
